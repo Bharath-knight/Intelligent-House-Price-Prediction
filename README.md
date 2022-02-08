@@ -43,7 +43,7 @@ Host_response_time, Neighbourhood_group_cleansed, review_scores_rating  <br/>
 * Applied Log transformation of variable price to reduce skewness of the data. <br/>
 
 ##  Feature Extraction: <br/>
-
+![image](https://user-images.githubusercontent.com/82858787/153087031-16987dc4-540d-4073-8075-aabfbf4fae12.png)
 
 
 * A new dataframe with the features of our interest is created with the help of our Exploratory Data Analysis. <br/>
