@@ -1,5 +1,6 @@
 # Intelligent-House-Price-Prediction <br/>
-![image](https://user-images.githubusercontent.com/82858787/153079008-6ac9bbe0-8401-4a5b-a10a-94be310cbead.png)
+
+![House_Price_pred_snap](https://user-images.githubusercontent.com/82858787/153093693-a7098bd6-da2d-444c-a156-5eadc56e6038.png)
 
 
 A sneak peek into the Airbnb activity in Seattle, WA, USA <br/>
@@ -23,6 +24,7 @@ Is there a general upward trend of both new Airbnb listings and total Airbnb vis
 • Feature Extraction <br/>
 • Feature Scaling <br/>
 • Encoding Categorical Features <br/>
+• Reading the images <br/>
 • Employing the model <br/>
 
 ##  Exploratory Data Analysis: <br/>
@@ -51,7 +53,24 @@ Host_response_time, Neighbourhood_group_cleansed, review_scores_rating  <br/>
 'property_type', 'room_type', 'bathrooms', 'bedrooms', 'bed_type',  'accommodates', 'guests_included','review_scores_rating', 'neighbourhood_group_cleansed', 'log_price'<br/>
 
 
+##  Feature Scaling: <br/>
+* StandardScaler() from the sklearn module is used to transform the data such that its distribution will have a mean value 0 and standard deviation of 1.<br/>
+* Features are scaled so that every variable contributes to the model equally.<br/>
 
+##  Encoding Categorical Features: <br/>
+* ML models and Neural Networks require all input and output variables to be numeric. <br/>
+Hence, the categorical variables should be encoded before fitting and training.<br/>
+Hence, the categorical variables should be encoded before fitting and training.<br/>
+* We use the OrdinalEncoding() from the sklearn module for this process. <br/>
+   The following features are encoded:'property_type', 'room_type', 'bed_type', 'neighbourhood_group_cleansed' <br/>
+
+
+##  Reading Images: <br/>
+* The column ‘picture_url’ contains the url for corresponding pictures of listing posted by the host. <br/>
+* Using the urllib and skimage module the images from the web pages are read and stored in an array ‘images’. <br/>
+
+##  Employing the model: <br/>
+* 
 
 
 
