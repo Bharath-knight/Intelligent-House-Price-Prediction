@@ -17,6 +17,9 @@ Can you describe the vibe of each Seattle neighborhood using listing description
 What are the busiest times of the year to visit Seattle? By how much do prices spike?<br/>
 Is there a general upward trend of both new Airbnb listings and total Airbnb visitors to Seattle?<br/>
 
+## Dataset
+In this project, we use the Seattle Airbnb Open Data [link to the dataset] (https://www.kaggle.com/airbnb/seattle)
+
 ## Breakdown of this Project: <br/>
 • Exploratory Data Analysis <br/>
 • Sentiment Analysis of Reviews <br/>
@@ -70,12 +73,15 @@ Hence, the categorical variables should be encoded before fitting and training.<
 * Using the urllib and skimage module the images from the web pages are read and stored in an array ‘images’. <br/>
 
 ##  Employing the model: <br/>
-* 
+![Price_pred_model_image](https://user-images.githubusercontent.com/82858787/153095664-a12426a1-67b4-4b7f-816b-47fa19a17783.png)
 
 
+* For Numerical data, we employ ANN to train the model 
+* For images, we employ CNN to extract features 
+* We concatenate the individual outputs and utilise ANN for final prediction of price.
 
+##  Conclusion: <br/>
 
-Built a Price Prediction model with ‘Light GBM’ algorithm for predicting the price of New York Airbnb. <br/> <br/>
-• I learnt how to learn/extract infromation from raw, unstructured data. New York Airbnb listings Dataset from Kaggle was used in this repo to perform Exploratory Data       Analysis.<br/>
-• I have used the LinearRegressor, LightGBM models to make predictions of the house price. Root Mean Square Error (RMSE) was the performance metric used to compare the       model. The model provided a Root Mean Square Error value - 0.459, showed better results than the Linear Regression model. <br/> 
+• We learnt how to learn/extract infromation from raw, unstructured data.<br/>
+• We have developed a deep learning model to predict house prices given numerical data as well as images <br/>
 
